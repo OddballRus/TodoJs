@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Todo/trello</title>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="board-layout">
+
+    <div class="left">
+      <div class="board-text">Things to Get Done</div>
+
+    </div>
+
+    <div id='boardlists' class="board-lists">
+      <div id='list1' class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+        <div class="list-title">
+          To Do
+        </div>
+
+        <div id='card2' class="card" draggable="true" ondragstart="dragStart(event)">
+          Разработать ToDo на ReactJs
+        </div>
+        <div id='card3' class="card" draggable="true" ondragstart="dragStart(event)">
+          Сделать Сайдбар
+        </div>
+        <div id='card4' class="card" draggable="true" ondragstart="dragStart(event)">
+          Сделать список всех задач
+        </div>
+        <div id='card5' class="card" draggable="true" ondragstart="dragStart(event)">
+          Сделать удаление и редактирвоание задач и списков
+        </div>
+      </div>
+      <div id='list2' class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+        <div class="list-title">
+          Doing
+        </div>
+        <div id='card1' class="card" draggable="true" ondragstart="dragStart(event)">
+          Изучить ReactJs
+        </div>
+      </div>
+      <div id='list3' class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+        <div class="list-title">
+          Done
+        </div>
+        <div id='card1' class="card" draggable="true" ondragstart="dragStart(event)">
+          Изучить Js
+        </div>
+        <div id='card1' class="card" draggable="true" ondragstart="dragStart(event)">
+          Разработать простой ToDo на Js
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='script.js'></script>
+</body>
+
+</html>
